@@ -1,21 +1,24 @@
-# Online Shop Management System
+# Library Management System
 
-A short and clean Java application demonstrating core Object-Oriented Programming (OOP) principles using modern Java features.
+A clean and lightweight Java application demonstrating core Object-Oriented Programming (OOP) principles using modern Java features.
 
 ## 📌 OOP Concepts Implemented
 
-*   Encapsulation: Used private fields with public getters and setters to protect data integrity.
-*   Abstraction: Implemented via the Sellable interface and the abstract base class Product.
-*   Inheritance: The Electronics class uses extends to inherit properties from the Product parent class.
-*   Polymorphism: A single ArrayList<Product> handles both default and dynamically added subclasses seamlessly using method overriding (`displayInvoice()`).
-*   Package Structure: Core logic is neatly organized inside the management package.
-*   Modern Java Features: Utilizes local variable type inference (`var`) and automatic resource management via try-with-resources.
-*   Robustness: Includes user input validation using a Scanner wrapped inside a try-catch block to handle exceptions.
+* Abstraction: Implemented via abstract base concepts defining the library items.
+* Encapsulation: Protects data integrity by using private variables restricted to access via public getters and setters.
+* Inheritance: Specific classes like book, ebook, and magazine use extends to inherit common attributes from their parent library items.
+* Method Overriding & Polymorphism: Subclasses override display methods to handle distinct item behaviors seamlessly at runtime inside a dynamic collection.
+* Access Modifiers: Uses private for class-level encapsulation and protected to allow safe data access within subclass extensions.
+* Packages: Core models and logic are cleanly isolated within the models package.
+* Exception Handling: User input streams are managed safely using a try-catch block to handle mismatched input gracefully without crashing the app.
 
 ## 📁 Project Structure
 
 ```text
 .
-├── Main.java                 # Application Entry Point
-└── management/               # Custom Package
-    └── ShopSystem.java       # Product, Electronics, and Sellable Interface
+├── README.md               # Project Documentation
+└── models/                 # Custom Package Folder
+    ├── libraryApp.java     # Main Application Entry Point
+    ├── book.java           # Book Subclass
+    ├── ebook.java          # EBook Subclass
+    └── magazine.java       # Magazine Subclass
