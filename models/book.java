@@ -1,19 +1,18 @@
 package library.models;
 
-// Encapsulation + Constructors + Access Modifiers
 public class Book {
     private String title;
     private String author;
     private String isbn;
 
-    // Constructor
+    
     public Book(String title, String author, String isbn) {
         this.title = title;
         this.author = author;
         this.isbn = isbn;
     }
 
-    // Getters and Setters
+    
     public String getTitle() { return title; }
     public void setTitle(String title) { this.title = title; }
 
@@ -23,7 +22,7 @@ public class Book {
     public String getIsbn() { return isbn; }
     public void setIsbn(String isbn) { this.isbn = isbn; }
 
-    // Method Overriding
+
     @Override
     public String toString() {
         return "Book: " + title + " by " + author + " [ISBN: " + isbn + "]";
