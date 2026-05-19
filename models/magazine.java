@@ -1,6 +1,4 @@
-package library.models;
-
-// Abstraction via Interface
+package library
 interface Borrowable {
     void borrow();
     void returnItem();
