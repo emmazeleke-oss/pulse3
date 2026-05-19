@@ -10,7 +10,7 @@ public class LibraryApp {
         Scanner sc = new Scanner(System.in);
 
         try {
-            System.out.println("📚 Welcome to Library Management System!");
+            System.out.println("Welcome to Library Management System!");
 
         
             System.out.print("Enter book title: ");
@@ -42,10 +42,10 @@ public class LibraryApp {
             m.returnItem();
 
         } catch (Exception e) {
-            System.out.println("⚠️ Error: " + e.getMessage());
+            System.out.println("Error: " + e.getMessage());
         } finally {
             sc.close();
-            System.out.println("✅ Program finished.");
+            System.out.println("Program finished.");
         }
     }
 }
