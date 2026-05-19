@@ -1,6 +1,4 @@
-package library.models;
-
-// Inheritance + Method Overriding + super keyword
+package library.
 public class EBook extends Book {
     private double fileSize;
 
